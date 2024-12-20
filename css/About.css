@@ -1,0 +1,27 @@
+
+body {
+    background-image: url(../img/space2.jpg);
+    color: white;
+    user-select: none;
+   
+}
+.info :not(p){
+    animation: fadeIn 1.5s ease-out;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.icon-box, .infographic-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ animation: fadeIn 1.5s ease-out;
+}
+.textp{
+    animation: fadeIn 1.5s ease-out;
+}
+.icon-box:hover, .infographic-box:hover {
+    transform: translateY(-10px); 
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

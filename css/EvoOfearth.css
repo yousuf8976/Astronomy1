@@ -1,0 +1,109 @@
+body {
+  user-select: none;
+  background-attachment: fixed;
+  background-image: url(../img/space2.jpg)
+}
+
+.earth-text {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.earth-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.earth-section {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 2rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.earth-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.earth-description {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.earth-details {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.earth-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  transition: text-shadow 0.3s ease;
+}
+
+.earth-heading:hover {
+  text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.row.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutters .col-md-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 768px) {
+  .earth-title {
+      font-size: 2.5rem;
+  }
+
+  .earth-description {
+      font-size: 1.1rem;
+  }
+
+  .earth-details {
+      padding: 1.5rem;
+  }
+
+  .earth-heading {
+      font-size: 1.75rem;
+  }
+
+  .earth-text {
+      font-size: 0.95rem;
+  }
+
+  .earth-image {
+      max-width: 100%;
+  }
+}
+.earth-image-second {
+  height: 394px;
+  object-fit: cover;
+}

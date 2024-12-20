@@ -1,0 +1,135 @@
+body {
+    min-height: 100vh;
+    background-image: url(../img/space2.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    user-select: none;
+    color: #fff;
+
+}
+
+section {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1.text-center {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    color: #ECF0F1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-out;
+}
+
+p.text-center {
+    font-size: 1.2rem;
+    color: #BDC3C7;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+}
+
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-text {
+    color: #BDC3C7;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+    h1.text-center {
+        font-size: 2.5rem;
+    }
+
+    p.text-center {
+        font-size: 1rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1.text-center {
+        font-size: 2rem;
+    }
+
+    p.text-center {
+        font-size: 0.9rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
